@@ -16,3 +16,11 @@ git_repository,原来可以这么玩:
      相当于：git branch dev 
 	         git checkout dev 
 	这两条命令。
+
+8、切换到主分支分支（master分支）：git checkout master
+9、把dev分支的工作成果合并到master分支上：git merge dev 。
+     git merge命令用于合并指定分支到当前分支
+10、合并完成后，可以把放心的删除dev分支了,删除后，查看branch，就只剩下master分支了：
+     git branch -d dev
+	 git branch
+	
