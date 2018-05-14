@@ -7,6 +7,19 @@ git_repository,原来可以这么玩:
 
 1、创建一个目录：mkdir learngit
 2、通过git init命令把这个目录变成Git可以管理的仓库：
+
+步骤：
+	git add 文件名
+    git commit -m "使用说明（如：修改登录功能）"
+同步到github服务器：git push origin master
+
+查看最近到最远的提交日志：
+    git log --pretty=oneline
+	
+版本回退：
+	git reset --hard HEAD^   (回退上一个版本)
+	git reset --hard 12345678(回退到这个版本commit id为12345678)
+
 3、要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
 4、关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
 5、此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改
@@ -23,4 +36,12 @@ git_repository,原来可以这么玩:
 10、合并完成后，可以把放心的删除dev分支了,删除后，查看branch，就只剩下master分支了：
      git branch -d dev
 	 git branch
-	
+小结
+Git鼓励大量使用分支：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
