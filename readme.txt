@@ -36,12 +36,32 @@ git_repository,原来可以这么玩:
 10、合并完成后，可以把放心的删除dev分支了,删除后，查看branch，就只剩下master分支了：
      git branch -d dev
 	 git branch
-小结
-Git鼓励大量使用分支：
-查看分支：git branch
-创建分支：git branch <name>
-切换分支：git checkout <name>
-创建+切换分支：git checkout -b <name>
-合并某分支到当前分支：git merge <name>
-删除分支：git branch -d <name>
+
+	 
+	 
+	 
+	
+
+版本回退小结
+	HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+	穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+	要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。	
+	
+添加远程库 小结
+	要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+	关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+	此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+克隆远程库 小结
+	要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+	Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+创建与合并分支 小结
+	Git鼓励大量使用分支：
+	查看分支：git branch
+	创建分支：git branch <name>
+	切换分支：git checkout <name>
+	创建+切换分支：git checkout -b <name>
+	合并某分支到当前分支：git merge <name>
+	删除分支：git branch -d <name>
 
