@@ -65,3 +65,8 @@ git_repository,原来可以这么玩:
 	合并某分支到当前分支：git merge <name>
 	删除分支：git branch -d <name>
 
+
+
+python自动化简介：
+   https://blog.csdn.net/a464057216/article/details/52717464
+
