@@ -1,4 +1,5 @@
 郑重说明：
+来源：https://blog.csdn.net/u011535541/article/details/83379151
 这是用来练习的，项目只是完成了一小部分，请大家不要下载哈，我是个新手。
 
 git is a free software.
@@ -38,7 +39,8 @@ git_repository,原来可以这么玩:
 	 git branch
 
 	 
-	 
+Git Clone 命令直接使用用户名:密码：
+git clone https://用户名:密码@git.coding.net/sample/HelloWorld.git	 
 	 
 	
 
@@ -69,4 +71,5 @@ git_repository,原来可以这么玩:
 
 python自动化简介：
    https://blog.csdn.net/a464057216/article/details/52717464
+
 
