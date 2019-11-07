@@ -10,7 +10,7 @@ git_repository,原来可以这么玩:
 2、通过git init命令把这个目录变成Git可以管理的仓库：
 
 步骤：
-	git add 文件名
+	git add 文件名。# 将该文件加入缓冲区，如果你确定所有的修改都需要提交，可以使用git add .来加入所有修改
     git commit -m "使用说明（如：修改登录功能）"
 同步到github服务器：git push origin master
 
